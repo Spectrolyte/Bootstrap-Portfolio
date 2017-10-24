@@ -1,5 +1,6 @@
 body {
 	background-image: url("https://i.pinimg.com/736x/5d/ac/d0/5dacd004927da04b74e271b176c3dee0--subtle-textures-seamless-textures.jpg");
+	font-family: 'Karla', sans-serif;
 }
 
 hr {
@@ -18,13 +19,40 @@ hr {
 	background-color: white;
 }
 
-.icons, .about-me {
+.top, .icons, .about-me, .email {
 	width: 100%;
 	margin: auto;
 }
 
-.header, .navbar {
-	width: 50%;
-	float: left;
-	display: inline-block;
+.works {
+	width: 100%;
+}
+
+.caption {
+	width: 97%;
+	text-align: center;
+	background-color: #0048A0;
+	color: white;
+	position: relative;
+	top: -100px;
+	left: 1.5%;
+	padding: 10px 0px;
+}
+
+.work {
+	position: relative;
+}
+
+.navbar, .navbar-header, h4 {
+	font-family: 'Courgette', cursive;
+}
+
+.navbar-header h1, .navbar-nav h5 {
+	color: white;
+	margin: auto;
+	width: 100%;
+}
+
+.navbar {
+	padding-bottom: 20px;
 }

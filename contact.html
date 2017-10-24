@@ -3,37 +3,71 @@
 <head>
 	<title>DT's Portfolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 </head>
 <body>
 	<!-- defining grid -->
 	<div class="container">
 		<!-- portfolio header -->
-		<div class="page-header">
-		  <h1>Diana Tecson</small></h1>
-		</div>
-		<!-- navigation bar -->
-		<ul class="nav nav-tabs">
-		  <li role="presentation"><a href="index.html">About</a></li>
-		  <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-		  <li role="presentation" class="active"><a href="contact.html">Contact</a></li>
-		</ul>
+		<nav class="navbar navbar-default navbar-inverse">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html"><h1>Diana Tecson</h1></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><h5>About</h5></a></li>
+		        <li><a href="portfolio.html"><h5>Portfolio</h5></a></li>
+		        <li><a href="contact.html"><h5>Contact</h5></a></li>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 		<!-- main content -->
 		<div class ="row content">
-			<!-- contact section -->
-			<section class="col-md-8 about-me">
-				Contact
+			<!-- about me section -->
+			<section class="col-md-8">
+				<h4>Contact Me</h4>
 				<hr>
-				<p>Email and message boxes go here.</p>
+				<section class="row email">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						</div>
+						<div>
+						  	<label for="message">Message</label>
+						 	<input type="text" class="form-control" placeholder="Text input">
+						</div>
+						<hr>
+						<div>
+							<label for="#">Look forward to hearing from you!</label>
+							<br>
+							<input class="btn btn-default" type="submit" value="Submit">
+						</div>
+					</form>
+				</section>
 			</section>
 			<!-- connect with me/sidebar -->
 			<section class="col-md-4 connect">
-				Connect with me
+				<h4>Connect with me</h4>
 				<hr>
-				<div class="row">
-					<img class="col-md-4 icon img-responsive" src="assets/images/icons/githubicon.png">
-					<img class="col-md-4 icon img-responsive" src="assets/images/icons/linkedinicon.png">
-					<img class="col-md-4 icon img-responsive" src="assets/images/icons/stackoverflowicon.png">
+				<div class="row icons">
+					<a href="https://github.com/Spectrolyte"><img class="col-md-4 icon img-responsive img-thumbnail" src="assets/images/icons/githubicon.png" alt="github"></a>
+					<a href="https://www.linkedin.com/in/dianatecson/"><img class="col-md-4 icon img-responsive img-thumbnail" src="assets/images/icons/linkedinicon.png" alt="linkedin"></a>
+					<a href="https://stackoverflow.com/users/8616843/spectrolyte?tab=profile"><img class="col-md-4 icon img-responsive img-thumbnail" src="assets/images/icons/stackoverflowicon.png" alt="stackoverflow"></a>
 				</div>
 			</section>
 		</div>
